@@ -1,9 +1,11 @@
+import { CybercafeLanding } from "../index.js";
+
 function Home() {
     return (
-        <div className='h-screen w-screen flex flex-col items-center justify-center  text-white'>
-            <h1 className='text-2xl'>Welcome...</h1>
+        <div className="min-h-screen w-full  text-white flex items-center justify-center">
+            <CybercafeLanding />
         </div>
-    )
+    );
 }
 
-export default Home
+export default Home;
