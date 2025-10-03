@@ -8,6 +8,7 @@ import Input from './ui/Input.jsx'
 import Button from  './ui/Button.jsx'
 import Login from './auth/login.jsx'
 import Signup from './auth/signup.jsx'
+import Register from '../components/Register.jsx'
 export {
     Container,
     Header,
@@ -18,7 +19,8 @@ export {
     Input,
     Button,
     Login,
-    Signup
+    Signup,
+    Register
 
 
 }
