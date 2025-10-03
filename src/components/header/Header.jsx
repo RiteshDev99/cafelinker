@@ -1,10 +1,11 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {Container, Logo} from "../index.js";
 
 
 function Header () {
 
+    const navigate = useNavigate();
 
     const navItems = [
         {
@@ -12,21 +13,22 @@ function Header () {
             slug:'/',
             active: true,
         },
+
         {
-            name: "Contact",
-            slug:'',
+            name: "Login",
+            slug:'/login',
             active: true,
 
         },
         {
-            name: "Login",
-            slug:'',
+            name: "Sign Up",
+            slug:'/signup',
             active: true,
 
         },
         {
             name: "Register",
-            slug:'',
+            slug:'/register',
             active: true,
 
         },
@@ -48,7 +50,7 @@ function Header () {
                             item.active ? (
                                 <li key={item.name}>
                                     <button
-                                        // onClick={() => navigate(item.slug)}
+                                        onClick={() => navigate(item.slug)}
                                         className="inline-block px-6 py-2  duration-200 hover:bg-[#1473d9]  hover:text-amber-50 text-[#5b626e] rounded-full"
                                     >
                                         {item.name}
