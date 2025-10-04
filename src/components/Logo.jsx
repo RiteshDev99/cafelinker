@@ -1,6 +1,6 @@
 const Logo = () => {
     return (
-        <div className="h-10 w-32  flex items-center justify-center  ">
+        <div className="h-10 w-24  flex items-center justify-center  ">
             <img
                 src="/src/assets/icons/logo.png"
                 alt="Logo"

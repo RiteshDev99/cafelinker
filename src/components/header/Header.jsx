@@ -9,7 +9,6 @@ function Header() {
     const navItems = [
         { name: "Home", slug: "/" },
         { name: "Login", slug: "/login" },
-        { name: "SignUp", slug: "/signup" },
         { name: "Register", slug: "/register" },
     ];
 

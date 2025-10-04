@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {Link } from 'react-router-dom'
 import {Button, Input, Logo} from '../index.js'
 import {useForm} from 'react-hook-form'
-
+import { Locate } from "lucide-react";
 function Signup() {
     const [error, setError] = useState("")
     const {register, handleSubmit} = useForm()
@@ -35,24 +35,31 @@ function Signup() {
                     Already have an account?&nbsp;
                     <Link
                         to="/login"
-                        className="font-medium text-primary transition-all duration-200 hover:underline"
+                        className="font-medium text-primary transition-all duration-200 hover:underline text-[#1573d1]"
                     >
                         Sign In
                     </Link>
                 </p>
                 {error && <p className="text-red-600 mt-8 text-center">{error}</p>}
 
-                <form >
+                <form className=''>
                     <div className='space-y-5'>
                         <Input
-                            label="Full Name: "
+                            label="Full Name : "
                             placeholder="Enter your full name"
                             {...register("name", {
                                 required: true,
                             })}
                         />
                         <Input
-                            label="Email: "
+                            label="Cafe Name : "
+                            type="password"
+                            placeholder="Cafe name"
+                            {...register("password", {
+                                required: true,})}
+                        />
+                        <Input
+                            label="Email : "
                             placeholder="Enter your email"
                             type="email"
                             {...register("email", {
@@ -64,13 +71,28 @@ function Signup() {
                             })}
                         />
                         <Input
-                            label="Password: "
+                            label="Password : "
                             type="password"
                             placeholder="Enter your password"
                             {...register("password", {
                                 required: true,})}
                         />
-                        <Button type="submit" className="w-full cursor-pointer hover:bg-[#ed6502] duration-200">
+
+
+                        <div className="relative">
+                            <Input
+                                label="Address:"
+                                type="text"
+                                placeholder="Enter your address"
+                                {...register("address", { required: true })}
+                            />
+                            <span className="absolute right-3 top-[38px] text-gray-500 cursor-pointer "
+
+                            >
+                               <Locate size={22} />
+                             </span>
+                        </div>
+                        <Button type="submit" className="w-full cursor-pointer hover:bg-[#1573d1] duration-200">
                             Create Account
                         </Button>
                     </div>
@@ -79,6 +101,7 @@ function Signup() {
 
         </div>
     )
+
 }
 
 export default Signup
