@@ -92,9 +92,15 @@ function Signup() {
                                <Locate size={22} />
                              </span>
                         </div>
-                        <Button type="submit" className="w-full cursor-pointer hover:bg-[#1573d1] duration-200">
-                            Create Account
-                        </Button>
+                        <Link
+                          to="DashBoard"
+                        >
+                            <Button type="submit" className="w-full cursor-pointer hover:bg-[#1573d1] duration-200"
+                            >
+                                Register Your Account
+                            </Button>
+                        </Link>
+
                     </div>
                 </form>
             </div>

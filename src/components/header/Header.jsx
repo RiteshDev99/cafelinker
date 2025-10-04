@@ -8,15 +8,17 @@ function Header() {
 
     const navItems = [
         { name: "Home", slug: "/" },
+        { name: "Contact", slug: "" },
         { name: "Login", slug: "/login" },
-        { name: "Register", slug: "/register" },
+        // { name: "Register", slug: "/register" },
+
     ];
 
     return (
         <header className="py-4 shadow bg-[#f7f9fc] w-full sticky top-0 z-50">
             <Container>
                 <nav className="flex items-center justify-between">
-                    <Link to="/" className="flex items-center space-x-2">
+                    <Link to="/" className="flex items-center space-x-2 ">
                         <Logo />
                     </Link>
                     <ul className="hidden md:flex items-center space-x-4">
