@@ -1,21 +1,23 @@
-
-import {Outlet} from "react-router-dom";
-import {Footer, Header} from "./components/index.js";
+import { Outlet, useLocation } from "react-router-dom";
+import { Footer, Header } from "./components/index.js";
 
 function App() {
+    const location = useLocation();
 
 
+    const isDashboard = location.pathname.startsWith("/dashBoard");
 
-    return(
-        <div className='flex flex-col flex-wrap justify-between min-h-screen w-full items-center  bg-[#fafcfc] ' >
-            <Header/>
-            <min>
+    return (
+        <div className="flex flex-col min-h-screen w-full bg-[#fafcfc]">
+            {!isDashboard && <Header />}
+
+            <main className="flex-1 w-full">
                 <Outlet />
-            </min>
-            <Footer/>
-        </div>
-    )
+            </main>
 
+            {!isDashboard && <Footer />}
+        </div>
+    );
 }
 
-export default App
+export default App;
