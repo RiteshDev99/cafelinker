@@ -13,7 +13,7 @@ export default function QRCode() {
                     Share My Cafe Page
                 </h1>
 
-                <p className="text-gray-500 text-center mb-8">
+                <p className="text-gray-500 text-center mb-8 text-sm">
                     Share your cafe's page with customers via QR code.
                 </p>
 
@@ -31,10 +31,10 @@ export default function QRCode() {
 
                 <button
                     onClick={handleShare}
-                    className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-xl flex items-center justify-center gap-3 transition-colors shadow-md"
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-xl flex items-center justify-center gap-3 transition-colors shadow-md"
                 >
                     <Share2 size={24} />
-                    <span className="text-lg">Share Page</span>
+                    <span className="text-sm">Share Page</span>
                 </button>
             </div>
         </div>

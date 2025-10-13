@@ -9,15 +9,16 @@ const RecentCustomers = () => {
     ]);
 
     return (
-        <div className="bg-white rounded-xl shadow-sm p-6">
-            <div className="flex justify-between items-center mb-6">
+        <div className="bg-white rounded-xl shadow-sm overflow-hidden">
+            <div className="flex justify-between items-center  shadow py-3 p-6">
                 <h2 className="text-2xl font-bold text-gray-800">Recent Customers</h2>
-                <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg flex items-center gap-2 transition-colors">
+                <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg flex items-center gap-2 transition-colors">
                     <UserPlus size={20} />
                     Add Customer
                 </button>
             </div>
 
+            <div className='p-6'>
             <table className="w-full">
                 <thead>
                 <tr className="border-b border-gray-200">
@@ -41,6 +42,7 @@ const RecentCustomers = () => {
                 ))}
                 </tbody>
             </table>
+            </div>
         </div>
     );
 };

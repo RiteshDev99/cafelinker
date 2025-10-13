@@ -13,7 +13,7 @@ export default function CyberCafeSidebar({ activeItem, setActiveItem }) {
         <div className="fixed top-0 left-0 w-80 h-screen bg-white shadow-lg flex flex-col z-10">
             <div className="p-6 border-b border-gray-100">
                 <div className="flex items-center gap-3 mb-8">
-                    <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center transform rotate-12">
+                    <div className="w-10 h-10 bg-blue-500 rounded-xl flex items-center justify-center transform rotate-12">
                         <div className="w-6 h-6 bg-white rounded opacity-80"></div>
                     </div>
                     <h1 className="text-xl font-bold text-gray-800">CyberCafe Manager</h1>

@@ -1,6 +1,6 @@
 const CafeInformation = () => {
     return (
-        <div className="bg-white rounded-xl shadow-sm p-6 sticky ">
+        <div className="bg-white rounded-xl shadow-sm p-4 sticky ">
             <h2 className="text-2xl font-bold text-gray-800 mb-6">Cafe Information</h2>
 
             <div className="space-y-4">

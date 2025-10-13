@@ -1,6 +1,6 @@
 import ServicesTable from "./Services/ServicesTable.jsx";
 import RecentCustomers from "./Customers/RecentCustomer.jsx";
-import CafeInformation from "./InfoCards/CafeInformation.jsx";
+import CafeInformation from "./Info/CafeInformation.jsx";
 import QRCode from "./QR/QrCode.jsx";
 
 
@@ -12,7 +12,7 @@ const Dashboard = () => {
                     <ServicesTable />
                     <RecentCustomers />
                 </div>
-                <div className="col-span-1  flex flex-col gap-6">
+                <div className="col-span-1  flex flex-col gap-8">
                     <CafeInformation />
                     <QRCode />
                 </div>
